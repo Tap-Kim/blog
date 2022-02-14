@@ -4,8 +4,8 @@ import React from "react";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
-const name = "Your Name";
-export const siteTitle = "Next.js sample website";
+const name = "김태현";
+export const siteTitle = "Tap-Kim's Develop Life";
 
 function Layout({ children, home }) {
   return (
@@ -14,7 +14,7 @@ function Layout({ children, home }) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="Next.js 연습용 이력서 페이지입니다."
         />
         <meta
           property="og:image"
