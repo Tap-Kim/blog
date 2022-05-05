@@ -1,15 +1,14 @@
 import Head from "next/head";
 import Image from "next/image";
-import React from "react";
-import styles from "./layout.module.css";
-import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
-const name = "김태현";
+import React from "react";
+import { PROFILE_IMG_URL } from "../enums/profile";
+const name = "Taehyun Kim";
 export const siteTitle = "Tap-Kim's Develop Life";
 
 function Layout({ children, home }) {
   return (
-    <div className={styles.container}>
+    <div className="maxw-36rem px-0 py-4 ml-12 my-auto mr-24">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -25,18 +24,18 @@ function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>
+      <header className="flex flex-col items-center">
         {home ? (
           <>
             <Image
               priority
-              src="/images/profile.jpg"
-              className={utilStyles.borderCircle}
+              src={PROFILE_IMG_URL}
+              className="rounded-full"
               height={144}
               width={144}
               alt={name}
             />
-            <h1 className={utilStyles.heading2xl}>{name}</h1>
+          <h1 className="text-3xl font-extrabold tracking-tighter my-3">{name}</h1>
           </>
         ) : (
           <>
@@ -44,17 +43,17 @@ function Layout({ children, home }) {
               <a>
                 <Image
                   priority
-                  src="/images/profile.jpg"
-                  className={utilStyles.borderCircle}
+                  src={PROFILE_IMG_URL}
+                  className="rounded-full"
                   height={108}
                   width={108}
                   alt={name}
                 />
               </a>
             </Link>
-            <h2 className={utilStyles.headingLg}>
+            <h2 className="text-4xl leading-normal mx-4 my-0">
                 <Link href="/">
-                    <a className={utilStyles.colorInherit}>{name}</a>
+                    <a className="text-inherit">{name}</a>
                 </Link>
             </h2>
           </>
@@ -63,7 +62,7 @@ function Layout({ children, home }) {
       <main>{children}</main>
       {
           !home && (
-              <div className={styles.backToHome}>
+              <div className="mt-12 ">
                   <Link href="/">
                       <a>← Back to home</a>
                   </Link>

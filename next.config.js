@@ -8,4 +8,9 @@ module.exports = {
       },
     ]
   },
+  reactStrictMode: true,
+  images: {
+    domains: ['avatars.githubusercontent.com','localhost'],
+    formats: ["image/webp"]
+  }
 }

@@ -4,6 +4,23 @@ date: '2022-02-13'
 content: <h1>안녕하세요 시범입니다.</h1>
 ---
 
+# Tech Spec #
+## [ Front End ] ##
+- JavaSript
+- React
+- React Native
+
+## [ Training ] ## 
+- Next
+- TypeScript
+- Test Code
+
+## [ Back End ] ##
+- Java Spring
+
+## [ Database ] ##
+- PostgreSql
+
 Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
 
 - **Static Generation** is the pre-rendering method that generates the HTML at **build time**. The pre-rendered HTML is then _reused_ on each request.

@@ -10,11 +10,11 @@ export default function Post({ postData }) {
         <title>{postData.title}</title>
       </Head>
       <article>
-        <h1 class="text-3xl font-extralight tracking-tighter mx-4" >{postData.title}</h1>
-        <div class="text-zinc-500">
+        <h1 className="text-3xl font-extralight tracking-tighter mx-4" >{postData.title}</h1>
+        <div className="text-zinc-500">
           <Date dateString={postData.date} />
         </div>
-        <div class="text-xl font-extralight" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <div className="text-xl font-extralight" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
     </Layout>
   );

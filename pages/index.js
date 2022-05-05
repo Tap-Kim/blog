@@ -22,16 +22,16 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section class="text-2xl pt-1">
-        <h2 class="text-3xl m-1">Blog</h2>
-        <ul class="list-none p-0 m-0">
+      <section className="text-2xl pt-1">
+        <h2 className="text-3xl m-1">Blog</h2>
+        <ul className="list-none p-0 m-0">
           {allPostsData.map(({ id, date, title }) => (
-              <li class="ml-0 mt-0 mr-1.5 mb-5" key={id}>
+              <li className="ml-0 mt-0 mr-1.5 mb-5" key={id}>
               <Link href={`/posts/${id}`}>
                 <a>{title}</a>
               </Link>
                 <br />
-                <small class="text-zinc-500">
+                <small className="text-zinc-500">
                   <Date dateString={date} />
                 </small>
             </li>
