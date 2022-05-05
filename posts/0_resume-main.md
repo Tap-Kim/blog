@@ -4,8 +4,8 @@ date: '2022-02-13'
 content: <h1>안녕하세요 시범입니다.</h1>
 ---
 
-# Tech Spec #
-## [ Front End ] ##
+# Tech Spec
+## [ Front End ]
 - JavaSript
 - React
 - React Native
